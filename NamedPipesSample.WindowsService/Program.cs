@@ -1,4 +1,10 @@
-﻿using NamedPipesSample.WindowsService;
+﻿
+
+//
+// When debugging, this code must run with local administrative rights.
+//
+
+using NamedPipesSample.WindowsService;
 using System.ServiceProcess;
 
 Console.WriteLine("Starting Service...");

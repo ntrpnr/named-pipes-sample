@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamedPipesSample.WindowsService", "NamedPipesSample.WindowsService\NamedPipesSample.WindowsService.csproj", "{F0367C18-E2F1-4170-A884-92C85AE27623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamedPipesSample.WindowsService", "NamedPipesSample.WindowsService\NamedPipesSample.WindowsService.csproj", "{F0367C18-E2F1-4170-A884-92C85AE27623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamedPipesSample.Common", "NamedPipesSample.Common\NamedPipesSample.Common.csproj", "{F8AA9F2B-104C-48F3-9B3F-EBF5549CBC69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamedPipesSample.Common", "NamedPipesSample.Common\NamedPipesSample.Common.csproj", "{F8AA9F2B-104C-48F3-9B3F-EBF5549CBC69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamedPipesSample.TrayIcon", "NamedPipesSample.TrayIcon\NamedPipesSample.TrayIcon.csproj", "{38C163F3-9CF0-4C4E-8E4A-584C9E00EEE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamedPipesSample.TrayIcon", "NamedPipesSample.TrayIcon\NamedPipesSample.TrayIcon.csproj", "{38C163F3-9CF0-4C4E-8E4A-584C9E00EEE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

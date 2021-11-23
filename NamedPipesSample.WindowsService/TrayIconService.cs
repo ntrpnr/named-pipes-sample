@@ -10,7 +10,7 @@ namespace NamedPipesSample.WindowsService
 {
     internal class TrayIconService : IDisposable
     {
-        private TrayManager trayManager;
+        private TrayManager? trayManager;
         private const string TRAY_ICON_PROCESS_NAME = "NamedPipesSample.TrayIcon";
 
 

@@ -8,7 +8,7 @@ namespace NamedPipesSample.WindowsService
     {
         const string PIPE_NAME = "samplepipe";
 
-        private PipeServer<PipeMessage> server;
+        private PipeServer<PipeMessage>? server;
         private TrayIconService trayIconService;
 
         public NamedPipesServer()
@@ -21,8 +21,8 @@ namespace NamedPipesSample.WindowsService
             server = new PipeServer<PipeMessage>(PIPE_NAME);
 
             server.ClientConnected += async (o, args) => await OnClientConnectedAsync(args);
-            server.ClientDisconnected += async (o, args) => await OnClientDisconnectedAsync(args);
-            server.MessageReceived += async (sender, args) => await OnMessageReceivedAsync(args.Message);
+            server.ClientDisconnected += (o, args) => OnClientDisconnected(args);
+            server.MessageReceived += (sender, args) => OnMessageReceived(args.Message);
             server.ExceptionOccurred += (o, args) => OnExceptionOccurred(args.Exception);
 
             await server.StartAsync();
@@ -39,13 +39,16 @@ namespace NamedPipesSample.WindowsService
             });
         }
 
-        private async Task OnClientDisconnectedAsync(ConnectionEventArgs<PipeMessage> args)
+        private void OnClientDisconnected(ConnectionEventArgs<PipeMessage> args)
         {
             Console.WriteLine($"Client {args.Connection.Id} disconnected");
         }
 
-        private async Task OnMessageReceivedAsync(PipeMessage message)
+        private void OnMessageReceived(PipeMessage? message)
         {
+            if (message == null) 
+                return;
+
             switch (message.Action)
             {
                 case ActionType.SendText:
