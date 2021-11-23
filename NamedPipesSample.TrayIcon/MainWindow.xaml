@@ -1,0 +1,13 @@
+﻿<Window x:Name="MainWindow1" x:Class="NamedPipesSample.TrayIcon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NamedPipesSample.TrayIcon"
+        mc:Ignorable="d"
+        Title="NamedPipesSample" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="ShowTrayIconBtn" Content="Show TrayIcon" HorizontalAlignment="Left" Margin="107,0,0,0" VerticalAlignment="Center" Height="73" Width="207" Click="ShowTrayIconBtn_Click"/>
+        <Button x:Name="HideTrayIconBtn" Content="Hide TrayIcon" HorizontalAlignment="Left" Margin="472,0,0,0" VerticalAlignment="Center" Height="73" Width="207" Click="HideTrayIconBtn_Click"/>
+    </Grid>
+</Window>

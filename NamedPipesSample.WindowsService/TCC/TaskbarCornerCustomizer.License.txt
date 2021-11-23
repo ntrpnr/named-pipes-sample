@@ -1,0 +1,7 @@
+NO_HARDWARE_ID
+SNTCC-R9GV-BDA4-FLBC-NUVO
+11/22/2021 00:00:00
+12/31/9999 23:59:59
+Organization:ErikEngberg.com
+TargetProcess:NamedPipesSample.TrayIcon
+YzeAEIsS06q6q39IapHkaa7eixx8bc7OI4c8ErfbjK8j0lEfDi9y/+YpNHA19qgygnzbrvb3m3CLru70gZnzlDvub6+sKbODwc7naMnWrVcg/QDsfMgqv7cy6UxAjR2VDH7tbz4otk0du0juc6E3gCY1RpoBDBB7kONYZwzHJmg=
